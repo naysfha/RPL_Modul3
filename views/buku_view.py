@@ -34,6 +34,14 @@ class BukuView(ctk.CTk):
         # Tombol
         self.btn_simpan = ctk.CTkButton(self.frame_kiri, text="Simpan Data", fg_color="green")
         self.btn_simpan.pack(pady=20, padx=15, fill="x")
+        
+        # Ditambah: Penambahan Tombol Perbarui Data (Update) - Warna Biru
+        self.btn_update = ctk.CTkButton(self.frame_kiri, text="Perbarui Data (Update)", fg_color="blue", hover_color="darkblue")
+        self.btn_update.pack(pady=5, padx=15, fill="x")
+        
+        # Ditambah: Penambahan Tombol Hapus Data (Delete) - Warna Merah
+        self.btn_hapus = ctk.CTkButton(self.frame_kiri, text="Hapus Data (Delete)", fg_color="red", hover_color="darkred")
+        self.btn_hapus.pack(pady=5, padx=15, fill="x")
 
         # ==========================================
         # FRAME KANAN: TABEL DATA BUKU
