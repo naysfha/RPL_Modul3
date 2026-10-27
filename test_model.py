@@ -12,3 +12,4 @@ print("\n === Daftar Buku === ")
 daftar_buku = model.get_all_buku()
 for buku in daftar_buku:
     print(f"[{buku['id_buku']}]{buku['judul']}-{buku['penulis']}({buku['tahun_terbit']})")
+    
