@@ -1,4 +1,4 @@
-# Ibnaty Naeela_F5212510008
+# Nayla Syafha_F5212510020
 from config.database import Database
 
 class BukuModel:
