@@ -1,1 +1,7 @@
+# Nayla Syafha_F5212510020
 env/
+build/
+dist/
+*.spec
+__pycache__/
+
