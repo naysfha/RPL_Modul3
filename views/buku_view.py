@@ -42,6 +42,10 @@ class BukuView(ctk.CTk):
         # Ditambah: Penambahan Tombol Hapus Data (Delete) - Warna Merah
         self.btn_hapus = ctk.CTkButton(self.frame_kiri, text="Hapus Data (Delete)", fg_color="red", hover_color="darkred")
         self.btn_hapus.pack(pady=5, padx=15, fill="x")
+        
+        # Ditambah: Penambahan Tombol Logout - Warna Abu-abu
+        self.btn_logout = ctk.CTkButton(self.frame_kiri, text="Logout", fg_color="gray", hover_color="dimgray")
+        self.btn_logout.pack(pady=(15, 5), padx=15, fill="x")
 
         # ==========================================
         # FRAME KANAN: TABEL DATA BUKU

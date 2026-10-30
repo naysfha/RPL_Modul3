@@ -5,4 +5,7 @@ if __name__ == "__main__":
     app = AuthController()
     app.run()
     
-    
+# # Anggota
+# from controllers.anggota_controller import AnggotaController
+
+# AnggotaController().run()  

@@ -26,4 +26,21 @@ class UserModel:
             return user
         return None
     
-    
+    # Menambahkan register
+    def register_user(self, username, password, role):
+        if self.conn:
+            cursor = self.conn.cursor()
+            password_hash = self.hash_password(password)
+
+            query = f"INSERT INTO {self.table_name} (username, password, role) VALUES (%s, %s, %s)"
+            try:
+                cursor.execute(query, (username, password_hash, role))
+                self.conn.commit()
+                return True
+            except Exception as e:
+                print(f"Error: {e}")
+                self.conn.rollback()
+                return False
+            finally:
+                cursor.close()
+        return False
